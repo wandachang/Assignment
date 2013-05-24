@@ -113,11 +113,21 @@ border-bottom-left-radius: 100px;
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=444693402293853";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <header><h1>City's Temp</h1></header>
     <div class="container-fluid out">
         <div class="row-fluid">
             <div id='plot'class="span4">
                 <h3>功能1.直接點擊</h3>
+                <div class="fb-like" data-href="http://wandachang.github.io/Assignment/Assign3/Assign3.html" data-send="true" data-width="450" data-show-faces="true"></div>
                 <div id='list'></div>
 
                 <h3>功能2.下拉式選單</h3>
